@@ -1,0 +1,150 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:article_name",
+ "creation": "2023-11-21 11:49:53.214668",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "article_name",
+  "author",
+  "isbn",
+  "article_cost",
+  "total_cost",
+  "track_buyers",
+  "column_break_5oh5p",
+  "status",
+  "publisher",
+  "delivery_cost",
+  "image",
+  "amended_from",
+  "section_break_uzwjz",
+  "description",
+  "section_break_61nur",
+  "buyers"
+ ],
+ "fields": [
+  {
+   "fieldname": "article_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Article Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Author",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "ISBN"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "\nIssued\nAvailable"
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Publisher"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Article_Library",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5oh5p",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_uzwjz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "article_cost",
+   "fieldtype": "Currency",
+   "label": "Article Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "delivery_cost",
+   "fieldtype": "Currency",
+   "label": "Delivery Cost"
+  },
+  {
+   "fieldname": "section_break_61nur",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "buyers",
+   "fieldtype": "Table",
+   "label": "Buyers",
+   "options": "Buyer"
+  },
+  {
+   "default": "1",
+   "fieldname": "track_buyers",
+   "fieldtype": "Check",
+   "label": "Track Buyers",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-23 13:57:45.901582",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Article_Library",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -107,21 +107,21 @@ app_license = "MIT"
 # ---------------
 
 # scheduler_events = {
-#	"all": [
-#		"library_management.tasks.all"
-#	],
-#	"daily": [
-#		"library_management.tasks.daily"
-#	],
-#	"hourly": [
-#		"library_management.tasks.hourly"
-#	],
-#	"weekly": [
-#		"library_management.tasks.weekly"
-#	]
-#	"monthly": [
-#		"library_management.tasks.monthly"
-#	]
+# 	"all": [
+# 		"library_management.tasks.all"
+# 	],
+# 	"daily": [
+# 		"library_management.tasks.daily"
+# 	],
+# 	"hourly": [
+# 		"library_management.tasks.hourly"
+# 	],
+# 	"weekly": [
+# 		"library_management.tasks.weekly"
+# 	],
+# 	"monthly": [
+# 		"library_management.tasks.monthly"
+# 	],
 # }
 
 # Testing
