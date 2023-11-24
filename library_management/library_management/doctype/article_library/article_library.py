@@ -10,7 +10,7 @@ class Article_Library(Document):
 	def validate(self):
 		if (self.track_buyers == 0):
 			if (self.buyers):
-				frappe.throw('This article does not track buyer.')
+				frappe.throw('This article does not track buyers.')
 
 
 	def before_save(doc):
